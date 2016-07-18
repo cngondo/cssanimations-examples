@@ -1,16 +1,16 @@
+/*Change color animations*/
 @keyframes changeColor{
     from{background-color: red;}
     to{background-color: yellow;}
 }
-
 .rectangle{
     width: 300px;
     height: 200px;
     background-color: red;
     animation: changeColor;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
-
+/*Moving animations*/
 @keyframes moving{
     0%   {background-color: red; left:0px; top:0px;}
     25%  {background-color: yellow; left:200px; top:0px;}
@@ -34,4 +34,6 @@
     animation: moving;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-direction: alternate;
 }
